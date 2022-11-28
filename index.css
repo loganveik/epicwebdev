@@ -133,6 +133,38 @@ nav {
     }
 }
 
+/* HOME */
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2rem 1rem;
+}
+
+.home-content {
+    width: 49rem;
+}
+
+.home-content h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--red-light);
+    border-bottom: 0.075rem solid var(--gray-light);
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+@media(max-width:500px) {
+    .home-content p {
+        font-size: 0.8rem;
+    }
+}
+
 /* ABOUT US */
 .about {
     width: 100%;
@@ -209,6 +241,94 @@ nav {
 @media(max-width:500px) {
     .about-content p {
         font-size: 0.8rem;
+    }
+}
+
+/*  STAFF */
+.staff {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2rem 2rem;
+}
+
+.staff-content {
+    width: 49rem;
+}
+
+.staff-content h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--red-light);
+    border-bottom: 0.075rem solid var(--gray-light);
+    margin-bottom: 2rem;
+}
+
+.staff-display {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.staff-card {
+    text-align: center;
+}
+
+.staff-card-img {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 0.5rem;
+}
+
+.staff-card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.staff-card h1 {
+    border: none;
+    color: #242424;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.staff-card p {
+    color: var(--red-dark);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+@media(max-width:800px) {
+    .staff-display {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .staff-card-img {
+        height: 20rem;
+    }
+}
+
+@media(max-width:550px) {
+    .staff-display {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .staff-card {
+        width: 75%;
+    }
+
+    .staff-card-img {
+        height: auto;
+    }
+}
+
+@media(max-width:400px) {
+    .staff-card {
+        width: 100%;
     }
 }
 
